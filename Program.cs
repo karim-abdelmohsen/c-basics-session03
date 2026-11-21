@@ -39,20 +39,29 @@ namespace c_basics_session03
             #region Question(5)
             //5- Given string title = "Clean Code"; and int pages = 464;, build the sentence
             // "Book: Clean Code, Pages: 464" using the + operator.
-            string title5 = "Clean Code";
-            int pages5 = 464;
-            string sentence1 = "Book: " + title5 + ", Pages: " + pages5;
-            Console.WriteLine(sentence1);
+            //string title5 = "Clean Code";
+            //int pages5 = 464;
+            //string sentence1 = "Book: " + title5 + ", Pages: " + pages5;
+            //Console.WriteLine(sentence1);
             #endregion
             #region Question(6)
             //6- Build the same sentence as above, but using string interpolation ($"...").
-            string sentence2 = $"Book: {title5}, Pages: {pages5}";
-            Console.WriteLine(sentence2);
+            //string sentence2 = $"Book: {title5}, Pages: {pages5}";
+            //Console.WriteLine(sentence2);
             #endregion
             #region Question(7)
             //7- Build the same sentence again, but using string.Format().
-            string sentence3 = string.Format("Book: {0}, Pages: {1}", title5, pages5);
-            Console.WriteLine(sentence3);
+            //string sentence3 = string.Format("Book: {0}, Pages: {1}", title5, pages5);
+            //Console.WriteLine(sentence3);
+            #endregion
+            #region Question(8)
+            //8- Given int pages = 464;, write an if / else statement that prints "Long Book"
+            // if pages is greater than 300, otherwise prints "Short Book".
+            int pages8 = 464;
+            if (pages8 > 300)
+                Console.WriteLine("Long Book");
+            else
+                Console.WriteLine("Short Book");
             #endregion
 
 
