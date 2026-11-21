@@ -28,8 +28,15 @@ namespace c_basics_session03
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - Updated");
-            Console.WriteLine(sb.ToString());
+            //Console.WriteLine(sb.ToString());
             #endregion
+            #region Question(4)
+            //4- Using the StringBuilder from the question above, use Replace() to change
+            // "Book List" into "Library". Print the result.
+            sb.Replace("Book List", "Library");
+            Console.WriteLine(sb.ToString());  
+            #endregion
+
         }
     }
 }
