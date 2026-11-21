@@ -150,20 +150,21 @@ namespace c_basics_session03
             //}
             #endregion
             #region Question(18)
-            //18- Write a method PrintFirstBook() ...
-            PrintFirstBook(books);                
-            PrintFirstBook(new string[] { });     
+            //18- Write a method PrintFirstBook() that prints the first book in the books array.
+            // If the array is empty, use return to exit the method early instead of printing anything.
+            PrintFirstBook(books);
+            PrintFirstBook(new string[] { });
             #endregion
-        }   
+        }
+
         #region Question(18) Method
         static void PrintFirstBook(string[] bookList)
         {
             if (bookList.Length == 0)
-                return;
+                return;   
 
             Console.WriteLine(bookList[0]);
         }
         #endregion
     }
 }
-    
