@@ -122,7 +122,6 @@ namespace c_basics_session03
             //    Console.WriteLine("Checking book...");
             //    count++;
             //} while (count < 3);
-            //#endregion
             #endregion
             #region Question(15)
             //15- Using the same books array, use a foreach loop to print every book title.
@@ -137,26 +136,34 @@ namespace c_basics_session03
             //foreach (string book in books)
             //{
             //    if (book == "Refactoring")
-            //        break;   
+            //        break;
             //    Console.WriteLine(book);
             //}
             #endregion
             #region Question(17)
             //17- Using the same books array, print every title except "The Pragmatic Programmer"
             // (skip it with continue, don't stop the loop).
-            foreach (string book in books)
-            {
-                if (book == "The Pragmatic Programmer")
-                    continue;   
-            }
+            //foreach (string book in books)
+            //{
+            //    if (book == "The Pragmatic Programmer")
+            //        continue;
+            //}
             #endregion
+            #region Question(18)
+            //18- Write a method PrintFirstBook() ...
+            PrintFirstBook(books);                
+            PrintFirstBook(new string[] { });     
+            #endregion
+        }   
+        #region Question(18) Method
+        static void PrintFirstBook(string[] bookList)
+        {
+            if (bookList.Length == 0)
+                return;
 
-
-
-
-
-
-
+            Console.WriteLine(bookList[0]);
         }
+        #endregion
     }
 }
+    
