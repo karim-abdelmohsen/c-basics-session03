@@ -105,6 +105,15 @@ namespace c_basics_session03
                 Console.WriteLine($"{i + 1}. {books[i]}");
             }
             #endregion
+            #region Question(13)
+            //13- Using the same books array, use a while loop to print every book title.
+            int index = 0;
+            while (index < books.Length)
+            {
+                Console.WriteLine(books[index]);
+                index++;
+            }
+            #endregion
 
 
 
