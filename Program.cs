@@ -44,6 +44,12 @@ namespace c_basics_session03
             string sentence1 = "Book: " + title5 + ", Pages: " + pages5;
             Console.WriteLine(sentence1);
             #endregion
+            #region Question(6)
+            //6- Build the same sentence as above, but using string interpolation ($"...").
+            string sentence2 = $"Book: {title5}, Pages: {pages5}";
+            Console.WriteLine(sentence2);
+            #endregion
+
 
 
         }
